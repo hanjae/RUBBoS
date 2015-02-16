@@ -3,13 +3,12 @@
 ##############################
 
 JAVA  = $(JAVA_HOME)/bin/java
-# JAVAC = $(JAVA_HOME)/bin/javac
-JAVAC = /usr/local/bin/jikes
-JAVACOPTS = +E -deprecation
+JAVAC = $(JAVA_HOME)/bin/javac
+JAVACOPTS = -deprecation
 JAVACC = $(JAVAC) $(JAVACOPTS)
 RMIC = $(JAVA_HOME)/bin/rmic
 RMIREGISTRY= $(JAVA_HOME)/bin/rmiregistry
-CLASSPATH = .:$(J2EE_HOME)/lib/j2ee.jar:$(JAVA_HOME)/jre/lib/rt.jar:/opt/jakarta-tomcat-3.2.3/lib/servlet.jar
+CLASSPATH = .:/usr/share/java/servlet-api-3.0.jar:$(JAVA_HOME)/jre/lib/rt.jar
 JAVADOC = $(JAVA_HOME)/bin/javadoc
 JAR = $(JAVA_HOME)/bin/jar
 
