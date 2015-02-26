@@ -158,7 +158,7 @@ public class BrowseStoriesByCategory extends RubbosHttpServlet
                   + URLEncoder.encode(categoryName)
                   + "&page="
                   + (page - 1)
-                  + "&nbOfStories=nbOfStories\">Previous page</a>\n</CENTER>\n");
+                  + "&nbOfStories="+nbOfStories+"\">Previous page</a>\n</CENTER>\n");
         }
         sp.printHTMLfooter();
         closeConnection(stmt, conn);
