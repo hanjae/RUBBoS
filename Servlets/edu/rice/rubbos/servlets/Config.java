@@ -43,8 +43,8 @@ public class Config
   {
   }
 
-  public static final String HTMLFilesPath                 = "../../../../../Servlet_HTML";
-  public static final String DatabaseProperties            = "../../../../mysql.properties";
+  public static final String HTMLFilesPath                 = "/var/lib/rubbos/Servlet_HTML";
+  public static final String DatabaseProperties            = "/var/lib/rubbos/mysql.properties";
 
   public static final int    AboutMePoolSize               = 10;
   public static final int    BrowseCategoriesPoolSize      = 6;
