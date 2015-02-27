@@ -28,7 +28,9 @@ sudo cp configfiles/appserver/* /var/lib/rubbos
 
 # copy webapp
 sudo cp -r configfiles/webapps/rubbos /var/lib/tomcat7/webapps/
+sudo mkdir -p /var/lib/tomcat7/webapps/rubbos/WEB-INF/lib
 sudo cp Servlets/rubbos_servlets.jar /var/lib/tomcat7/webapps/rubbos/WEB-INF/lib/
 
-
+# restart tomcat service
+sudo service tomcat7 restart
 
