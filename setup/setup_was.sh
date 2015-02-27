@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Script for install common things for rubbos
+# Script for install WAS for rubbos
 # For ubuntu 14.04 64bit
 # 2015.02.26 Jaehyun Han <jhhan@dcslab.snu.ac.kr>
 
