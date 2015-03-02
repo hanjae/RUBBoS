@@ -16,7 +16,7 @@ ssh $webserver 'bash -s' < setup_common.sh
 cat hosts | ssh $dbserver "sudo sh -c 'cat >> /etc/hosts'"
 ssh $dbserver 'bash -s' < setup_common.sh
 
-cat hosts | ssh dbserver "sudo sh -c 'cat >> /etc/hosts'"
+cat hosts | ssh $appserver "sudo sh -c 'cat >> /etc/hosts'"
 ssh $appserver 'bash -s' < setup_common.sh
 
 # setup dbserver
