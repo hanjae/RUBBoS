@@ -14,3 +14,12 @@ cd RUBBoS
 make flush_cache
 mv bench/flush_cache .
  
+cd ~
+curl -O http://sebastien.godard.pagesperso-orange.fr/sysstat-8.0.3.tar.bz2
+tar xvf sysstat-8.0.3.tar.bz2
+cd sysstat-8.0.3
+./configure
+make
+sudo make install
+
+echo 'ENABLED="true"' | sudo tee -a /etc/default/sysstat
