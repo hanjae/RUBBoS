@@ -2,6 +2,7 @@ package edu.rice.rubbos.beans;
 
 import java.util.GregorianCalendar;
 import java.lang.String;
+import java.text.*;
 
 /** This class provides additionnal functions that the GregorianCalendar
  * class does not provide. It is mainly to compute time differences and
@@ -55,6 +56,8 @@ public class TimeManagement extends GregorianCalendar
     minute = d.get(d.MINUTE);
     second = d.get(d.SECOND);
     result = year+"-"+month+"-"+day+" "+hour+":"+minute+":"+second;
+    DateFormat df = new SimpleDateFormat("yyyyMMdd_hhmmss");
+    result = df.format(d.getTime());
     return result;
   }
 
