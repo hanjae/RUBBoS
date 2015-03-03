@@ -47,15 +47,6 @@ public class TimeManagement extends GregorianCalendar
   public static String dateToString(GregorianCalendar d)
   {
     String result;
-    int    year, month, day, hour, minute, second;
-
-    year   = d.get(d.YEAR);
-    month  = d.get(d.MONTH) + 1;
-    day    = d.get(d.DATE);
-    hour   = d.get(d.HOUR_OF_DAY);
-    minute = d.get(d.MINUTE);
-    second = d.get(d.SECOND);
-    result = year+"-"+month+"-"+day+" "+hour+":"+minute+":"+second;
     DateFormat df = new SimpleDateFormat("yyyyMMdd_hhmmss");
     result = df.format(d.getTime());
     return result;
