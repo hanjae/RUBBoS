@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # $1 is the report directory with the trailing /
 # $2 is the Gnuplot terminal to use (gif, jpeg, ...)
