@@ -675,16 +675,10 @@ public class ClientEmulator
           scpCmd[1] =  (String)client.rubbos.getRemoteClients().get(i)
               + ":"+tmpDir+"trace_client"+(i+1)+".html";
           p = Runtime.getRuntime().exec(scpCmd);
-          p.getErrorStream().close();
-          p.getInputStream().close();
-          p.getOutputStream().close();
           p.waitFor();
           scpCmd[1] =  (String)client.rubbos.getRemoteClients().get(i)
               + ":"+tmpDir+"stat_client"+(i+1)+".html";
           p = Runtime.getRuntime().exec(scpCmd);
-          p.getErrorStream().close();
-          p.getInputStream().close();
-          p.getOutputStream().close();
           p.waitFor();
         }
       } 
