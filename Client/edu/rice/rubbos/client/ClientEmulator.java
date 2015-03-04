@@ -117,7 +117,7 @@ public class ClientEmulator
     { 
       // Start by creating a report directory and redirecting output to an index.html file
       System.out.println("RUBBoS client emulator - (C) Rice University/INRIA 2001\n");
-      reportDir = "bench/"+TimeManagement.currentDateToString()+"/";
+      reportDir = "/vagrant/"+TimeManagement.currentDateToString()+"/";
       try
       {
         System.out.println("Creating report directory "+reportDir);
@@ -675,10 +675,16 @@ public class ClientEmulator
           scpCmd[1] =  (String)client.rubbos.getRemoteClients().get(i)
               + ":"+tmpDir+"trace_client"+(i+1)+".html";
           p = Runtime.getRuntime().exec(scpCmd);
+          p.getErrorStream().close();
+          p.getInputStream().close();
+          p.getOutputStream().close();
           p.waitFor();
           scpCmd[1] =  (String)client.rubbos.getRemoteClients().get(i)
               + ":"+tmpDir+"stat_client"+(i+1)+".html";
           p = Runtime.getRuntime().exec(scpCmd);
+          p.getErrorStream().close();
+          p.getInputStream().close();
+          p.getOutputStream().close();
           p.waitFor();
         }
       } 
