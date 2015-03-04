@@ -17,3 +17,6 @@ flush_cache
 workload/user_transitions.txt
 workload/author_transitions.txt
 *.swp
+
+# Ignore results
+bench/2015*
