@@ -117,7 +117,7 @@ public class ClientEmulator
     { 
       // Start by creating a report directory and redirecting output to an index.html file
       System.out.println("RUBBoS client emulator - (C) Rice University/INRIA 2001\n");
-      reportDir = "/vagrant/"+TimeManagement.currentDateToString()+"/";
+      reportDir = "bench/"+TimeManagement.currentDateToString()+"/";
       try
       {
         System.out.println("Creating report directory "+reportDir);
