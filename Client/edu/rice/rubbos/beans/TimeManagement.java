@@ -24,7 +24,7 @@ public class TimeManagement extends GregorianCalendar
 
 
   /** Returns a string representation of the current date (when the method is called)
-   * conforming to the following database format : 'YYYY-MM-DD hh:mm:ss'
+   * conforming to the following database format : 'YYYY-MM-DD HH:mm:ss'
    *
    * @return current date in database format
    *
